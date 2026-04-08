@@ -385,3 +385,27 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`   Health: http://localhost:${PORT}/health`);
   console.log(`   API:    http://localhost:${PORT}/api/chat`);
 });
+
+// ============================================
+// API: SMS Endpoint (Coming Soon)
+// ============================================
+app.post('/api/sms', (req, res) => {
+  res.status(403).json({
+    error: 'Coming Soon',
+    message: 'SMS support is coming soon. Upgrade to PRO tier for early access.',
+    tier_required: 'PRO',
+    price: '$499/month'
+  });
+});
+
+// ============================================
+// API: Voice Endpoint (Coming Soon)
+// ============================================
+app.post('/api/voice', (req, res) => {
+  res.status(403).json({
+    error: 'Coming Soon',
+    message: 'Voice support is coming soon. Upgrade to PRO tier for early access.',
+    tier_required: 'PRO',
+    price: '$499/month'
+  });
+});
